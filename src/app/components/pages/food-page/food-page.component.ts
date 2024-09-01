@@ -23,6 +23,7 @@ export class FoodPageComponent implements OnInit {
   }
 
   addToCart(){
+    debugger
     this.cartService.addToCart(this.food);
     this.router.navigateByUrl('/cart-page');
   }
